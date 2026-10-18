@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eden — Stays, experiences and guided journeys</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#/" aria-label="Eden home"><svg class="sp" viewBox="0 0 24 24"><path d="M12 22V8M12 12c-4 0-6-2-6-5 4 0 6 2 6 5zm0 4c-4 0-6-2-6-5 4 0 6 2 6 5zm0-4c4 0 6-2 6-5-4 0-6 2-6 5zm0 4c4 0 6-2 6-5-4 0-6 2-6 5zM12 8c-2-1-2-4 0-6 2 2 2 5 0 6z" fill="none" stroke="currentColor" stroke-width="1.200"/></svg>EDEN</a>
+  <nav id="links" aria-label="Primary"></nav>
+  <div class="nr"><button class="btn btn-coral" data-open-modal>Get Started</button><button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button></div>
+</header>
+<main id="app"></main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="logo plain" href="#/"><svg class="sp" viewBox="0 0 24 24"><path d="M12 22V8M12 12c-4 0-6-2-6-5 4 0 6 2 6 5zm0 4c-4 0-6-2-6-5 4 0 6 2 6 5zm0-4c4 0 6-2 6-5-4 0-6 2-6 5zm0 4c4 0 6-2 6-5-4 0-6 2-6 5zM12 8c-2-1-2-4 0-6 2 2 2 5 0 6z" fill="none" stroke="currentColor" stroke-width="1.200"/></svg>EDEN</a>
+        <p class="f-tag">Stays, experiences and guided journeys shaped with the people who live there.</p>
+        <form class="f-form" onsubmit="return false"><input type="email" placeholder="Email address" aria-label="Email address"><button class="btn btn-coral sm">Join</button></form>
+        <h6 class="eyebrow">Follow us</h6>
+        <div class="social"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a><a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a></div>
+      </div>
+      <div><h6 class="eyebrow">Explore</h6><a href="#/stays">Stays</a><a href="#/experiences">Experiences</a><a href="#/blog">Blog</a></div>
+      <div><h6 class="eyebrow">Company</h6><a href="#/about">About</a><a href="#/host">Become a Host</a></div>
+    </div>
+    <div class="f-bottom"><span>© 2026 Eden. All rights reserved.</span><span><a href="#">Privacy</a><a href="#">Terms</a></span></div>
+  </div>
+</footer>
+<div class="overlay" id="modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+    <button class="x" data-close aria-label="Close">✕</button>
+    <h3 id="mt">Start your journey</h3>
+    <p>Leave your details and we'll plan your first Eden trip with you.</p>
+    <form onsubmit="return false">
+      <label>Full name<input placeholder="Your name"></label>
+      <label>Email<input type="email" placeholder="you@email.com"></label>
+      <button class="btn btn-coral block">Get started</button>
+    </form>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
